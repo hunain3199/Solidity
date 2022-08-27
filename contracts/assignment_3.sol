@@ -15,3 +15,14 @@ contract sum{
         return summ;
     }
 }
+
+contract prime{
+    function prime_num(uint n) public pure returns(string memory){
+        for(uint i = 2; i <= n/2; i++){
+            if(n % i == 0){
+                return "It is not prime";
+            }
+        }
+        return "IT IS PRIME NUMBER";
+    }
+}
