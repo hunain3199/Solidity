@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "check_bal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/send_transfer_cALL.sol": "getEthToContractAddress"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/send_transfer_cALL.sol": {
+			"keccak256": "0x7d96f6f8346da3a88541676627cee8b16eb4657e69e8eb7cd85b2b6ebf39b5e9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3de019ee52065102a133ee358110030c707ee348d19cf8b0406e9e3c95832cdd",
+				"dweb:/ipfs/QmUmU6z84B2fY1RX4SAD4hKrRXk7J1rXfw3ioTHpv5nPPg"
+			]
+		}
+	},
+	"version": 1
+}
