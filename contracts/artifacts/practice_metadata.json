@@ -135,7 +135,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/practice_sol.sol": "practice"
+			"contracts/doctor.sol": "practice"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -149,7 +149,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/practice_sol.sol": {
+		"contracts/doctor.sol": {
 			"keccak256": "0x1da4b58572d584a9ef9cc95b58f85816890af5bd46aa16de7221028d53f639ff",
 			"license": "MIT",
 			"urls": [
