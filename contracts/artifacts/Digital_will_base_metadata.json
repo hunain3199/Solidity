@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_willname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_will_assets_qty",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_asset_type",
+						"type": "string"
+					}
+				],
+				"name": "addd_digital_data",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getdigitalData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "will_Name",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "will_assets_qty",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "asset_type",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Digital_will_base.DigitalModel[]",
+								"name": "digitalData",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Digital_will_base.MaindigitalModel",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/digitalWill_database_management_Contract.sol": "Digital_will_base"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/digitalWill_database_management_Contract.sol": {
+			"keccak256": "0x120fd20aa3000166f3e518eedef111999c9d72f12b4aab3ab2ce77d9e60ffdff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7c7bebd623d380149dc3d97c7ec2c60bf8991b2b7bc9e31258908335f7e395c7",
+				"dweb:/ipfs/QmT9gRgfwXtPdsBJBRxfAPpzAS57t6HrB6v3Du1rDvvpJZ"
+			]
+		}
+	},
+	"version": 1
+}

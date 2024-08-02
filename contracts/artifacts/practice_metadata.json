@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_doctorNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_speciality",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_roomNo",
+						"type": "uint256"
+					}
+				],
+				"name": "add_doctor_data",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_doctorNo",
+						"type": "uint256"
+					}
+				],
+				"name": "delete_doctor_data",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_balance_earn_from_patients",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_doctorNo",
+						"type": "uint256"
+					}
+				],
+				"name": "get_doctor_data",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "speciality",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "roomNo",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct practice.Doctor[]",
+								"name": "DoctorsArray",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct practice.Doctor_Model",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payment_from_patients",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw_funds_to_owner_from_contract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/practice_sol.sol": "practice"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/practice_sol.sol": {
+			"keccak256": "0x1da4b58572d584a9ef9cc95b58f85816890af5bd46aa16de7221028d53f639ff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1b926f3d4b6ca291ae1b4dfc2e7718ad7d6cf75bc8faabab21dcba598ae78a0",
+				"dweb:/ipfs/QmQwJebUBntYtP2FipHZw9w3KLXhxeq8bZ2FbwstqL6Uzo"
+			]
+		}
+	},
+	"version": 1
+}
