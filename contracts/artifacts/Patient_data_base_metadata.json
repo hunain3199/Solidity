@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Patient_Name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_Patient_Age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_Patient_appointment_type",
+						"type": "string"
+					}
+				],
+				"name": "addd_patient_data",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPatientData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "Patient_Name",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Patient_Age",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "Patient_patient_appointment_type",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Patient_data_base.PatientModel[]",
+								"name": "patientData",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Patient_data_base.MainpatientModel",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/patient_database-management_Contract.sol": "Patient_data_base"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/patient_database-management_Contract.sol": {
+			"keccak256": "0x790f4533394320562946223249a21d29d1af342e8a5b7437aacf2ad3d96526b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3689f23a7393b2a21b3414d3167952bddfaab744cddbed545055e26fcbffdc69",
+				"dweb:/ipfs/QmYvyPxHHND4PbHSbjQfWbooK4BCGbNJPgvrPfL2NpidHh"
+			]
+		}
+	},
+	"version": 1
+}

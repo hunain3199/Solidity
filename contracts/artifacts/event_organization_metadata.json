@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ticketPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "addEvent",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_organizer",
+						"type": "address"
+					}
+				],
+				"name": "getEventDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getFullEvent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "organizer",
+										"type": "address"
+									},
+									{
+										"internalType": "uint256",
+										"name": "ticketPrice",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct event_organization.Event[]",
+								"name": "EventsArray",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct event_organization.Event_Modal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/event_organization.sol": "event_organization"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/event_organization.sol": {
+			"keccak256": "0xfe0a0740473585cebf8bd799cebbe78582124e091d87e538a3542bded4230a0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c3680c9fa6e99ec69d8ec7b2ecc32a15cd13a2ecc42975f6d917e9658a3ff263",
+				"dweb:/ipfs/QmbYyj5dTpaAaSkh7vVQBQmnLeWFhTdTcGkRJ7X7xK62gm"
+			]
+		}
+	},
+	"version": 1
+}

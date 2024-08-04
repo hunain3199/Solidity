@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_organizer_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_event_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ticket_price",
+						"type": "uint256"
+					}
+				],
+				"name": "addEvents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_organizerAddress",
+						"type": "address"
+					}
+				],
+				"name": "getEvents",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "organizer_name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "event_name",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "ticket_price",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct event_organisation2.Event[]",
+								"name": "events_array",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct event_organisation2.Event_Modal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/event_organisation2.sol": "event_organisation2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/event_organisation2.sol": {
+			"keccak256": "0x3f9ccbec97b4a7b42e7285c89a65e54cc7a81c310cbe9c743953f3e0adc6c9b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://166eec2a39833f39bdf2a34d01168c74a0b8f54d102b7bf27d6339dbf70ad419",
+				"dweb:/ipfs/QmQTPGLLqX1qfhgNDqWx6ZgdKi6xNib3DBXCra7kvPyN5F"
+			]
+		}
+	},
+	"version": 1
+}
