@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,13 +9,28 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "organizorName_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventName_",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_ticketPrice",
+						"name": "ticketPrice_",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxtickets_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum event_organization.EventCriteria",
+						"name": "eventCriteria_",
+						"type": "uint8"
 					}
 				],
 				"name": "addEvent",
@@ -33,17 +48,25 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_organizer",
+						"name": "_organizerAddress",
 						"type": "address"
 					}
 				],
-				"name": "getEventDetails",
+				"name": "delete_event_data",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
-					},
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -57,11 +80,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_address",
+						"name": "organizerAddress_",
 						"type": "address"
 					}
 				],
-				"name": "getFullEvent",
+				"name": "showEvent",
 				"outputs": [
 					{
 						"components": [
@@ -69,28 +92,82 @@
 								"components": [
 									{
 										"internalType": "string",
-										"name": "name",
+										"name": "organizorName",
 										"type": "string"
 									},
 									{
-										"internalType": "address",
-										"name": "organizer",
-										"type": "address"
+										"internalType": "string",
+										"name": "eventName",
+										"type": "string"
 									},
 									{
 										"internalType": "uint256",
 										"name": "ticketPrice",
 										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "maxtickets",
+										"type": "uint256"
+									},
+									{
+										"internalType": "enum event_organization.EventCriteria",
+										"name": "eventCriteria",
+										"type": "uint8"
+									},
+									{
+										"internalType": "address",
+										"name": "organizerAddress",
+										"type": "address"
 									}
 								],
 								"internalType": "struct event_organization.Event[]",
-								"name": "EventsArray",
+								"name": "eventArray",
 								"type": "tuple[]"
 							}
 						],
-						"internalType": "struct event_organization.Event_Modal",
+						"internalType": "struct event_organization.EventModal",
 						"name": "",
 						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_organizerAddress",
+						"type": "address"
+					}
+				],
+				"name": "showEventDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum event_organization.EventCriteria",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -110,9 +187,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/event_organization.sol": "event_organization"
+			"contracts/eventOrganization.sol": "event_organization"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -124,12 +201,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/event_organization.sol": {
-			"keccak256": "0xfe0a0740473585cebf8bd799cebbe78582124e091d87e538a3542bded4230a0b",
+		"contracts/eventOrganization.sol": {
+			"keccak256": "0x8e24774c85c62be63449194d17b7faa07ddc7aadbbee34840bd571b2d32b15ed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c3680c9fa6e99ec69d8ec7b2ecc32a15cd13a2ecc42975f6d917e9658a3ff263",
-				"dweb:/ipfs/QmbYyj5dTpaAaSkh7vVQBQmnLeWFhTdTcGkRJ7X7xK62gm"
+				"bzz-raw://b8798b16e3019be3c8d3f77eec20091ea22537a61b9300c6da7e2b33ce1d73cc",
+				"dweb:/ipfs/QmQbdGvfn2g8R8ACzDgi1kSQALXeUfeUB5zp8K6w7KxQCV"
 			]
 		}
 	},
