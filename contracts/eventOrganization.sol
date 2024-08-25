@@ -1,8 +1,12 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 
 contract event_organization{
+    using EnumerableSet for EnumerableSet.AddressSet;
+
+    EnumerableSet.AddressSet private organizers;
 
     enum EventCriteria{ Private,Public,Corperate }
     address owner = msg.sender;
@@ -31,6 +35,7 @@ contract event_organization{
         require(msg.value == 1 ether, "You must send exactly 1 ether to add an event");
         Event memory event_ = Event(organizorName_,eventName_,ticketPrice_,maxtickets_,eventCriteria_,msg.sender);
         eventmap[msg.sender].eventArray.push(event_);
+        organizers.add(msg.sender);
         return "Event Added Successfully";
     }
 
@@ -68,7 +73,9 @@ contract event_organization{
         return address(this).balance;
     }
 
-
+    function getAllOrganizers() public view onlyOwner returns (address[] memory) {
+        return organizers.values();
+    }
 
 
 

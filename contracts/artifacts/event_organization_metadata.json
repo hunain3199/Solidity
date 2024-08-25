@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -61,6 +61,19 @@
 					}
 				],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllOrganizers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -189,7 +202,7 @@
 		"compilationTarget": {
 			"contracts/eventOrganization.sol": "event_organization"
 		},
-		"evmVersion": "london",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -201,12 +214,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/eventOrganization.sol": {
-			"keccak256": "0x8e24774c85c62be63449194d17b7faa07ddc7aadbbee34840bd571b2d32b15ed",
+		"@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+			"keccak256": "0x86c1470cbfd878491e5de030072b647352d36bd27122cffb928970b1945282aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b8798b16e3019be3c8d3f77eec20091ea22537a61b9300c6da7e2b33ce1d73cc",
-				"dweb:/ipfs/QmQbdGvfn2g8R8ACzDgi1kSQALXeUfeUB5zp8K6w7KxQCV"
+				"bzz-raw://ad85dd393ee0a1917c57046abc5155f51f77844b2c6a42c05c1b8dd26d6ff3c1",
+				"dweb:/ipfs/QmNqYc8To2NdnpP6E1tGz7t6A7beuENde5yovwov5pW1fA"
+			]
+		},
+		"contracts/eventOrganization.sol": {
+			"keccak256": "0x79bfbb54756d1550f8245248f7a6bb6a4f29b523b81b7240b0f2d943152e5ba2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4d29261b765fd7a8df4bf7813d57a54738b0e4749ca04bbd5eca034b7f804d5f",
+				"dweb:/ipfs/QmWgbXgm21Eia7awkX9am3BAQ9zgQR8JcVogrhvwLzjiaM"
 			]
 		}
 	},
